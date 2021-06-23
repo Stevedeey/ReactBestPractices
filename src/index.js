@@ -6,11 +6,13 @@ import App3 from './ProductList/App3'
 import App4 from './TodoTask/App4'
 import StateMgt from './ProductList/StateMgt'
 import App6 from './TodoTaskClass/App6'
+import App5 from './ConditionalRendering/App5'
 
 
 ReactDOM.render(
   <React.StrictMode>
     <App6 />
+    <App5/>
     {/* <StateMgt />
     <App4 />
     <App3 />

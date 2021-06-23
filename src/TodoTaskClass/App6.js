@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Children } from "react";
 import todosData from "./todosData";
 import TodoItems from "../TodoTaskClass/TodoItems";
 
@@ -7,6 +7,16 @@ class App6 extends React.Component {
     super();
     this.state = { todos: todosData };
     this.handleCheck = this.handleCheck.bind(this);
+    this.state = { isLoading: true };
+  }
+
+  componentDidMount() {
+    setTimeout(
+      this.setState({
+        isLoading: false,
+      }),
+      1500
+    );
   }
 
   handleCheck(id) {
@@ -14,7 +24,8 @@ class App6 extends React.Component {
       const newTodo = prevState.todos.map((todo) => {
         if (todo.id === id) {
           return {
-            ...todo,completed: !todo.completed
+            ...todo,
+            completed: !todo.completed,
           };
         }
         return todo;
@@ -25,6 +36,8 @@ class App6 extends React.Component {
     });
   }
   render() {
+
+    
     const todoIt = this.state.todos.map((item) => (
       <TodoItems key={item.id} item={item} handleCheck={this.handleCheck} />
     ));
