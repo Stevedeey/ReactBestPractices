@@ -8,3 +8,4 @@ function Conditional(props){
       </div>
     );
 }
+export default Conditional

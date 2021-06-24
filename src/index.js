@@ -7,12 +7,17 @@ import App4 from './TodoTask/App4'
 import StateMgt from './ProductList/StateMgt'
 import App6 from './TodoTaskClass/App6'
 import App5 from './ConditionalRendering/App5'
+import Solution1 from './TodoTaskClass/Solution1';
+import MyForm from './MyForm.js'
+
 
 
 ReactDOM.render(
   <React.StrictMode>
-    <App6 />
-    <App5/>
+    <MyForm/>
+    {/* <Solution1/> */}
+    {/* <App6 /> */}
+    {/* <App5/> */}
     {/* <StateMgt />
     <App4 />
     <App3 />
