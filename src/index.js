@@ -9,11 +9,13 @@ import App6 from './TodoTaskClass/App6'
 import App5 from './ConditionalRendering/App5'
 import Solution1 from './TodoTaskClass/Solution1';
 import MyForm from './MyForm.js'
+import AppMeme from './MemeGeneratorFolder/AppMeme';
 
 
 
 ReactDOM.render(
   <React.StrictMode>
+    <AppMeme/>
     <MyForm/>
     {/* <Solution1/> */}
     {/* <App6 /> */}
